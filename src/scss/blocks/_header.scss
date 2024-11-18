@@ -1,16 +1,27 @@
 .header {
 	background-color: #c0e4f4;
-	padding: 50px 0;
+	padding: 40px 0;
 
 	&__row {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
-}
 
-.header__nav {
-	@include tablet {
-		display: none;
+	&__logo {
+	}
+	&__search {
+	}
+	&__question {
+	}
+	&__button {
+	}
+	&__phone {
 	}
 }
+
+// .header__nav {
+// 	@include tablet {
+// 		display: none;
+// 	}
+// }

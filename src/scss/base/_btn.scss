@@ -1,0 +1,10 @@
+.btn,
+a.btn {
+    border: 1px solid rgba(47, 43, 67, 0.15);
+    border-radius: 10px;
+    padding: 10px 20px;
+    
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}

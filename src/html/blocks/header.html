@@ -1,11 +1,32 @@
 <header class="header">
     <div class="container">
+
         <div class="header__row">
-            <div class="logo">Logo</div>
-            <button class="mobile-nav-btn">
+            <div class="header__logo">
+                <a href="#!">
+                    <img src="./../../img/svgicons/logo.svg" alt="Логотип">
+                </a>
+            </div>
+            <div class="header__search">
+                <input type="search" name="find" id="find" placeholder="Я хочу найти...">
+            </div>
+            <div class="header__question">
+                <button class="header__button">
+                    <img src="./../../img/svgicons/question.svg" alt="Задать вопрос">
+                    Задать вопрос
+                </button>
+            </div>
+            <div class="header__phone">
+                <p>
+                    8 800 302-92-70
+                    <span>Бесплатный звонок юристу 24/7</span>
+                </p>
+            </div>
+            <!-- <button class="mobile-nav-btn">
                 <div class="nav-icon"></div>
-            </button>
+            </button> -->
         </div>
+        @@include('nav.html')
     </div>
 </header>
 @@include('mobile-nav.html')
