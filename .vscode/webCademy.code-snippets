@@ -226,8 +226,8 @@
 	"SVG icon sprite": {
 		"prefix": "svgIcon",
 		"body": [
-			"<svg class=\"icon icon--${1:example}\">",
-			"	<use href=\"./img/svgsprite/sprite.symbol.svg#${1:example}\"></use>",
+			"<svg class=\"svg-icons svg-icons--${1:example}\">",
+			"	<use href=\"./img/svg-sprite/sprite.svg#${1:example}\"></use>",
 			"</svg>"
 		],
 		"description": "SVG icon sprite"
