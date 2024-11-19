@@ -8,6 +8,8 @@ const fileInclude = require('gulp-file-include'); // для использова
  * 
  */
 const webphtml = require('gulp-webp-html-nosvg');
+// const formatHtml = require('gulp-format-html');
+const { formatHTML } = require(`gulp-format-html`)
 
 /** подключаем sass
  * @sassGlob - необходим для упрощенного подключения частей файлов scss
@@ -141,6 +143,7 @@ gulp.task('html:dev', function () {
                 '$1./$4$5$7$1'
             ))
         .pipe(webphtml())
+        .pipe(formatHtml())
         .pipe(gulp.dest('./build/'))
 });
 
@@ -277,7 +280,7 @@ gulp.task('watch:dev', function () {
     gulp.watch('./src/fonts/**/*', gulp.parallel('ttf2woff2:dev'));
     gulp.watch('./src/files/**/*', gulp.parallel('files:dev'));
     gulp.watch('./src/libs/**/*', gulp.parallel('libs:dev'));
-    gulp.watch('./src/js/**/*.js', gulp.parallel('js:dev')); 
+    gulp.watch('./src/js/**/*.js', gulp.parallel('js:dev'));
 });
 
 

@@ -2,6 +2,14 @@
     width: 24px;
     height: 24px;
     color: var(--accent-color);
+    transition: all 0.2s ease-in;
+}
+
+.btn:hover .svg-icons {
+    width: 24px;
+    height: 24px;
+    color: var(--text-color-white);
+
 }
 
 .svg-icons--green {

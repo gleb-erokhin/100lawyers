@@ -1,0 +1,35 @@
+.nav {
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__btn .btn + .btn {
+        margin-left: 15px;
+    }
+    &__nav-list {
+        display: flex;
+        gap: 30px;
+    }
+    &__user li+li {
+        margin-left: 16px;
+    }
+    &__user {
+        display: flex;
+        align-items: center;
+    }
+    &__user-item:first-child {
+        position: relative;
+    }
+    &__user-item:first-child::after {
+        position: absolute;
+        content: '/';
+        top: 0;
+        left: 100%;
+        transform: translateX(100%);
+    }
+    &__link--user {
+        display: flex;
+        gap: 10px;
+    }
+}

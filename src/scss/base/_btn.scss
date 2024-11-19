@@ -1,19 +1,33 @@
 .btn,
 a.btn {
     border: 1px solid rgba(47, 43, 67, 0.15);
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 10px 19px;
 
     display: inline-flex;
+    position: relative; 
     align-items: center;
     gap: 10px;
+    transition: all 0.2s ease-in;
+}
+
+.btn:hover,
+a.btn:hover {
+    border: 1px solid transparent;
+    background-color: #1a77a3;
+    color: #fff;
+}
+.btn:active,
+a.btn:active {
+    border: 1px solid #1a77a3;
+
 }
 
 .btn--header,
 a.btn--header {
     font-weight: 600;
     color: #fff;
-    border: unset;
+    border: 1px solid transparent;
     padding: 15px 20px;
     background-color: var(--green);
 }
