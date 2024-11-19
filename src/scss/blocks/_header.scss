@@ -6,16 +6,30 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		gap: 10px;
+		margin-bottom: 30px;
 	}
 
-	&__logo {
-	}
 	&__search {
+		border-radius: 10px;
+		padding: 14px 20px;
+		width: 427px;
+		background-color: rgba(47, 43, 67, 0.04);
+
+		color: rgba(47, 43, 67, 0.4);
 	}
-	&__question {
-	}
-	&__button {
-	}
+
 	&__phone {
+		display: flex;
+		flex-direction: column;
+
+		font-weight: 700;
+		font-size: 20px;
+	}
+
+	&__phone span {
+		font-weight: 400;
+		font-size: 14px;
+		color: rgba(47, 43, 67, 0.5);
 	}
 }
