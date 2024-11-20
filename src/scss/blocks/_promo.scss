@@ -1,0 +1,41 @@
+.promo {
+    padding-top: 40px;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    &__info {
+        width: 657px;
+        padding-top: 50px;
+    }
+    &__header {
+        padding-bottom: 15px;
+    }
+    &__desc {
+        padding-bottom: 30px;
+    }
+    &__action {
+        padding-bottom: 40px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    &__list {
+        width: 628px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+    &__list-item {
+        display: flex;
+        gap: 10px;
+    }
+    &__img {
+        width: 377px;
+        height: 377px;
+        border-radius: 50%;
+        background-color: var(--green);
+    }
+}

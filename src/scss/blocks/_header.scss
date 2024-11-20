@@ -18,18 +18,4 @@
 
 		color: rgba(47, 43, 67, 0.4);
 	}
-
-	&__phone {
-		display: flex;
-		flex-direction: column;
-
-		font-weight: 700;
-		font-size: 20px;
-	}
-
-	&__phone span {
-		font-weight: 400;
-		font-size: 14px;
-		color: rgba(47, 43, 67, 0.5);
-	}
 }

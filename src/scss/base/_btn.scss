@@ -5,7 +5,7 @@ a.btn {
     padding: 10px 19px;
 
     display: inline-flex;
-    position: relative; 
+    position: relative;
     align-items: center;
     gap: 10px;
     transition: all 0.2s ease-in;
@@ -20,7 +20,6 @@ a.btn:hover {
 .btn:active,
 a.btn:active {
     border: 1px solid #1a77a3;
-
 }
 
 .btn--header,
@@ -30,4 +29,16 @@ a.btn--header {
     border: 1px solid transparent;
     padding: 15px 20px;
     background-color: var(--green);
+}
+
+.btn--promo,
+a.btn--promo {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 16px 36px 18px 36px;
+    background-color: var(--green);
+
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-color-white);
 }

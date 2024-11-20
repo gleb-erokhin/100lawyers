@@ -5,7 +5,7 @@ html {
 body {
 	background-color: var(--page-bg);
 	color: var(--text-color);
-    font-family: var(--font-main);
+	font-family: var(--font-family);
 	font-size: 16px;
 	font-weight: 400;
 }
@@ -29,4 +29,34 @@ pre.code {
 	background-color: #e9f1f6;
 	padding: 1rem;
 	border-radius: 4px;
+}
+
+// блок телефон и бесплатный звонок
+.phone {
+	display: flex;
+	flex-direction: column;
+
+	font-weight: 700;
+	font-size: 20px;
+
+	& span {
+		font-weight: 400;
+		font-size: 14px;
+		color: rgba(47, 43, 67, 0.5);
+	}
+	&__hero {
+		font-weight: 700;
+		font-size: 24px;
+		color: var(--green);
+	}
+
+	&__hero span {
+		font-size: 12px;
+		padding-top: 4px;
+		color: rgba(47, 43, 67, 0.5);
+	}
+	&__hero a {
+		width: 179px;
+		border-bottom: 2px solid var(--green);
+	}
 }
