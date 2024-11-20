@@ -9,7 +9,7 @@ const fileInclude = require('gulp-file-include'); // для использова
  */
 const webphtml = require('gulp-webp-html-nosvg');
 // const formatHtml = require('gulp-format-html');
-const { formatHTML } = require(`gulp-format-html`)
+const formatHtml = require(`gulp-format-html`)
 
 /** подключаем sass
  * @sassGlob - необходим для упрощенного подключения частей файлов scss
