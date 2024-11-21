@@ -1,0 +1,12 @@
+.law {
+    margin-bottom: 80px;
+    &__content {
+        line-height: 1.6;
+    }
+    &__content p + p {
+        padding-top: 10px;
+    }
+    &__header {
+        margin-bottom: 20px;
+    }
+}
