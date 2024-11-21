@@ -1,0 +1,19 @@
+.breadcrumbs {
+    &__list {
+        display: flex;
+        gap: 20px;
+
+        font-size: 16px;
+        color: rgba(47, 43, 67, 0.5);
+    }
+    &__list-item {
+        position: relative;
+    }
+    &__list-item:first-child:after{
+        position: absolute;
+        content: '/';
+        top: 0;
+        left: 102%;
+        transform: translate(100%, 0);
+    }
+}

@@ -1,5 +1,5 @@
 .promo {
-    padding-top: 40px;
+    margin-bottom: 96px;
     &__row {
         display: flex;
         justify-content: space-between;
@@ -15,6 +15,8 @@
     }
     &__desc {
         padding-bottom: 30px;
+        font-size: 16px;
+        line-height: 1.6;
     }
     &__action {
         padding-bottom: 40px;
@@ -41,18 +43,19 @@
         border-radius: 50%;
         background-color: var(--green);
         overflow: hidden;
+        bottom: -24px;
     }
-    
+
     &__img::before {
         position: absolute;
-        content: '';
+        content: "";
         width: 308px;
         height: 402px;
         top: -13px;
         left: 50%;
         transform: translate(-50%, 0);
-        
-        background-image: url('./../../img/hot-line/main-photo.png');
+
+        background-image: url("./../../img/hot-line/main-photo.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -63,14 +66,14 @@
     }
     &__overlay::after {
         position: absolute;
-        content: '';
+        content: "";
         width: 308px;
         height: 402px;
-        top: -89px;
+        top: -65px;
         left: 50%;
         transform: translate(-50%, 0);
-        
-        background-image: url('./../../img/hot-line/m2.png');
+
+        background-image: url("./../../img/hot-line/m2.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
