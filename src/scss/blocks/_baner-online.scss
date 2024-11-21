@@ -1,0 +1,23 @@
+.baner-online {
+    margin-bottom: 80px;
+    &__row {
+        height: 200px;
+        border-radius: 20px;
+        background-color: var(--green);
+    }
+    &__call-us {
+    }
+    &__status {
+    }
+    &__list {
+        display: inline-flex;
+        padding-left: 30px;
+    }
+    &__item {
+        position: relative;
+        margin-left: -30px;
+    }
+    
+    &__item {
+    }
+}
