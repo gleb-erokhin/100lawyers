@@ -182,6 +182,9 @@ gulp.task('images:dev', function () {
         .pipe(webp())
         // .pipe(imageMin({ verbose: true }))
         .pipe(gulp.dest('./build/img/'))
+        .pipe(gulp.src('./src/img/**/*'))
+        .pipe(changed('./build/img/'))
+        .pipe(gulp.dest('./build/img/'))
 });
 
 /** fonts

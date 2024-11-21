@@ -6,7 +6,8 @@
         gap: 30px;
     }
     &__info {
-        width: 657px;
+        flex-grow: 1;
+        max-width: 657px;
         padding-top: 50px;
     }
     &__header {
@@ -33,9 +34,45 @@
         gap: 10px;
     }
     &__img {
+        position: relative;
+        flex-shrink: 0;
         width: 377px;
         height: 377px;
         border-radius: 50%;
         background-color: var(--green);
+        overflow: hidden;
+    }
+    
+    &__img::before {
+        position: absolute;
+        content: '';
+        width: 308px;
+        height: 402px;
+        top: -13px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        
+        background-image: url('./../../img/hot-line/main-photo.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__overlay {
+        position: relative;
+    }
+    &__overlay::after {
+        position: absolute;
+        content: '';
+        width: 308px;
+        height: 402px;
+        top: -89px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        
+        background-image: url('./../../img/hot-line/m2.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
