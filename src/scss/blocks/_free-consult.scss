@@ -1,0 +1,36 @@
+.free-consult {
+    margin-bottom: 80px;
+    &__row {
+    }
+    &__header {
+        margin-bottom: 15px;
+    }
+    &__questions {
+        margin-bottom: 30px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        border: 1px solid rgba(47, 43, 67, 0.15);
+        border-radius: 20px;
+        padding: 20px;
+        width: 270px;
+        // height: 180px;
+    }
+    &__phone {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    &__action {
+        margin-top: auto;
+    }
+}
