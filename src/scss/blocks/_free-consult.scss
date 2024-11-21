@@ -11,8 +11,9 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         flex-grow: 1;
+        gap: 20px;
     }
     &__item {
         display: flex;
