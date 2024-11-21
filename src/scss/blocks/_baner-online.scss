@@ -1,13 +1,54 @@
 .baner-online {
+    color: var(--text-color-white);
+    font-weight: 600;
     margin-bottom: 80px;
+
     &__row {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
         height: 200px;
         border-radius: 20px;
+        padding: 43px 117px 50px 313px;
         background-color: var(--green);
+        overflow: hidden;
     }
-    &__call-us {
+    &__row::before {
+        position: absolute;
+        content: "";
+        width: 399px;
+        height: 399px;
+        top: 31px;
+        left: -108px;
+        border-radius: 50%;
+        background-color: rgba(20, 10, 50, 0.2);
     }
-    &__status {
+    &__row::after {
+        position: absolute;
+        content: "";
+        width: 298px;
+        height: 200px;
+        top: 0;
+        left: 36px;
+
+        background-image: url('./../../img/baner-online/woman.png');
+    }
+    &__call-us p {
+        font-size: 24px;
+
+        margin-bottom: 10px;
+    }
+    &__call-us span {
+        font-weight: 700;
+        font-size: 42px;
+        letter-spacing: -0.03em;
+    }
+    &__status p {
+        font-size: 18px;
+
+        margin-bottom: 20px;
     }
     &__list {
         display: inline-flex;
@@ -16,8 +57,5 @@
     &__item {
         position: relative;
         margin-left: -30px;
-    }
-    
-    &__item {
     }
 }
