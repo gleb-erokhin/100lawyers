@@ -1,0 +1,40 @@
+.service {
+    margin-bottom: 80px;
+    &__header {
+        margin-bottom: 30px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    &__list-item {
+        display: flex;
+        align-items: center;
+
+        border: 1px solid rgba(47, 43, 67, 0.15);
+        border-radius: 20px;
+        padding: 30px;
+        width: 560px;
+    }
+    &__list-item p {
+        width: 390px;
+        padding: 0 20px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    &__list-item span {
+        font-weight: 700;
+    }
+    &__img {
+        flex-shrink: 0;
+        width: 110px;
+        height: 110px;
+        background-color: #ebf2f0;
+        border-radius: 50%;
+    }
+    &__img img {
+        padding: 35px;
+    }
+}
