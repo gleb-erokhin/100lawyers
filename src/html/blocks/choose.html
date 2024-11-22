@@ -3,9 +3,11 @@
 
         <div class="choose__row">
             <div class="choose__info">
-                <div class="choose__desc">
-                    <h2 class="title-2">Почему стоит выбрать нас?</h2>
-                    <p>
+                <div class="choose__info-desc">
+                    <div class="choose__info-header">
+                        <h2 class="title-2">Почему стоит выбрать нас?</h2>
+                    </div>
+                    <p class="choose__info-text">
                         Срочно понадобились услуги профессионального юриста или адвоката? Решение есть! Наша горячая юридическая линия – возможность оперативно, абсолютно бесплатно получить ответ на любой вопрос
                     </p>
                     <ul class="choose__list">
@@ -23,7 +25,9 @@
                         </li>
                     </ul>
                 </div>
-                <img src="./../../img/choose/choose.png" srcset="./../../img/choose/choose@2x.png 2x" alt="">
+                <div class="choose__info-img">
+                    <img src="./../../img/choose/choose.png" srcset="./../../img/choose/choose@2x.png 2x" alt="">
+                </div>
             </div>
             <div class="choose__baner-call">
                 <div class="choose__hot-line">
@@ -32,11 +36,12 @@
                 </div>
                 <div class="choose__back-call">
                     <p>Заказать обратный звонок</p>
-                    <form action="#">
-                        <input type="text">
-                        <button class="btn">Заказать звонок</button>
+                    <form class="choose__form" action="#">
+                        <input class="choose__form-input" id="phone" type="text">
+                        <label class="choose__form-lable" for="phone">Номер телефона</label>
+                        <button class="btn btn--call">Заказать звонок</button>
                     </form>
-                    <p class="choose__copy">Отправляя вопрос, вы соглашаетесь с условиями Пользовательского соглашения</p>
+                    <p class="choose__copy">Отправляя вопрос, вы соглашаетесь с условиями <a href="#!" class="choose__copy-link">Пользовательского соглашения</a></p>
                 </div>
             </div>
         </div>
