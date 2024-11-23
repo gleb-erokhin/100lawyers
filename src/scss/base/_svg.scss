@@ -5,12 +5,6 @@
     transition: all 0.2s ease-in;
 }
 
-// .btn:hover .svg-icons {
-//     width: 24px;
-//     height: 24px;
-//     color: var(--text-color-white);
-// }
-
 .svg-icons--green {
     color: var(--green);
 }
@@ -23,3 +17,10 @@
 // <svg class="svg-icons">
 //     <use href="./img/svg-sprite/sprite.svg#phone"></use>
 // </svg>
+
+// при необъходимости менять цвет svg при наведении
+// .btn:hover .svg-icons {
+//     width: 24px;
+//     height: 24px;
+//     color: var(--text-color-white);
+// }
