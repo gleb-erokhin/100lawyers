@@ -32,4 +32,10 @@
         display: flex;
         gap: 10px;
     }
+    &__link {
+        transition: color 0.2s ease-in;
+    }
+    &__link:hover {
+        color: var(--green);
+    }
 }

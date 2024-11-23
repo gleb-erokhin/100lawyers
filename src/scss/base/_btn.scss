@@ -13,10 +13,9 @@ a.btn {
 
 .btn:hover,
 a.btn:hover {
-    border: 1px solid transparent;
-    background-color: #1a77a3;
-    color: #fff;
+    border: 1px solid var(--green);
 }
+
 .btn:active,
 a.btn:active {
     border: 1px solid #1a77a3;
@@ -29,6 +28,10 @@ a.btn--header {
     border: 1px solid transparent;
     padding: 15px 20px;
     background-color: var(--green);
+}
+.btn--header:hover,
+a.btn--header:hover {
+    background-color: #81d2bc;
 }
 
 .btn--promo,
@@ -48,4 +51,11 @@ a.btn--call {
     border-radius: 10px;
     padding: 16px 36px 18px 36px;
     border: 1px solid #fff;
+}
+
+.btn--call:hover,
+a.btn--call:hover {
+    color: var(--text-color);
+    background-color: #fff;
+    border: 1px solid transparent;
 }
