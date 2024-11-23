@@ -1,14 +1,18 @@
+/* reviews-slider это оболочка каждой карточки, если надо добавить еще то добавляем ниже по шаблону и меняем содержимое, данный css использует reviews-slider.html и через @@include добавляется в reviews.html */
+
+// обертка для карточки слайдера, идет из самого Swiper-slider
 .swiper-slider {
     display: flex;
 }
+// описываем стили карточки
 .reviews-card {
+    // используем df для того чтобы последний блок с вопросом был на авто отступе и всегда был внизу карточки, дополнительно надо дать df для swiper-slider 
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(47, 43, 67, 0.15);
     border-radius: 20px;
     padding: 30px;
     width: 367px;
-    flex-grow: 1;
 
     &__header {
         display: flex;
