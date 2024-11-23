@@ -8,3 +8,24 @@
 .swiper-wrapper {
     display: flex;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    background-color: rgba(47, 43, 67, 0.04);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: var(--green);
+}
+
+.swiper-button-next:hover .svg-icons,
+.swiper-button-prev:hover .svg-icons {
+    color: var(--text-color-white);
+}

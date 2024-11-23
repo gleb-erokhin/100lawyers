@@ -228,7 +228,7 @@ gulp.task('files:dev', function () {
  * @src - любая папка внутри img и любой файл
  */
 gulp.task('libs:dev', function () {
-    return gulp.src('./src/libs/*/**/.js')
+    return gulp.src('./src/libs/**/*.js')
         .pipe(changed('./build/libs/'))
         .pipe(gulp.dest('./build/libs/'))
 });
