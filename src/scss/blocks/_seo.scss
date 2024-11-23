@@ -1,0 +1,26 @@
+.seo {
+    margin-bottom: 80px;
+    &__row {
+    }
+    &__header {
+        margin-bottom: 20px;
+    }
+    &__desc {
+        font-size: 16px;
+        line-height: 1.6;
+
+        margin-bottom: 30px;
+    }
+    &__desc p+p {
+        padding-top: 10px;
+    }
+    &__accordion {
+        width: 100%;
+        border-radius: 10px;
+        padding: 16px 36px 18px 36px;
+        background-color: #e0ece9;
+
+        font-weight: 600;
+        color: var(--green);
+    }
+}
