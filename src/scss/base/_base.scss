@@ -60,3 +60,8 @@ pre.code {
 		border-bottom: 2px solid var(--green);
 	}
 }
+
+// стиль для подчеркивания пользовательского соглашения, чтобы один раз на все страницы где используется back-call
+.main .back-call__copy-link {
+    text-decoration: underline;
+}

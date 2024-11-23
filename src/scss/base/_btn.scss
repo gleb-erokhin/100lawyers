@@ -9,6 +9,7 @@ a.btn {
     align-items: center;
     gap: 10px;
     transition: all 0.2s ease-in;
+    outline-color: var(--green);
 }
 
 .btn:hover,
@@ -16,10 +17,10 @@ a.btn:hover {
     border: 1px solid var(--green);
 }
 
-.btn:active,
-a.btn:active {
-    border: 1px solid #1a77a3;
-}
+// .btn:active,
+// a.btn:active {
+//     border: 1px solid #1a77a3;
+// }
 
 .btn--header,
 a.btn--header {
@@ -31,6 +32,7 @@ a.btn--header {
 }
 .btn--header:hover,
 a.btn--header:hover {
+    border: 1px solid transparent;
     background-color: #81d2bc;
 }
 

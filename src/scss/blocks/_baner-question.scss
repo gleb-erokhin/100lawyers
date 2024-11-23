@@ -1,0 +1,48 @@
+.baner-question {
+    margin-bottom: 80px;
+    &__row {
+        position: relative;
+        display: flex;
+        gap: 41px;
+
+        border-radius: 20px;
+        background-color: rgba(47, 43, 67, 0.04);
+        padding: 51px 53px 37px;
+    }
+    &__herader {
+        width: 295px;
+        display: flex;
+    }
+    &__row::after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        right: 0;
+        width: 292px;
+        height: 199px;
+        background-image: url("./../../img/baner-online/iphone13.png");
+        background-size: 292px 199px;
+    }
+}
+
+.baner-question .back-call__copy {
+    width: 293px;
+    font-size: 12px;
+    color: rgba(47, 43, 67, 0.4);
+}
+
+.baner-question .back-call__form-input {
+    border: 1px solid rgba(47, 43, 67, 0.15);
+    width: 201px;
+}
+
+.baner-question .btn--call {
+    border: 1px solid transparent;
+    background-color: var(--green);
+    color: var(--text-color-white);
+    font-weight: 600;
+}
+
+.baner-question .btn--call:hover {
+    background-color: #81d2bc;
+}
