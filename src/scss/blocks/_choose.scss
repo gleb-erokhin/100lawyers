@@ -53,33 +53,5 @@
         font-size: 42px;
         letter-spacing: -0.03em;
     }
-    &__back-call p {
-        margin-bottom: 16px;
-    }
-    &__form {
-        display: inline-flex;
-        gap: 20px;
-        margin-bottom: 22px;
-    }
-    &__form-input {
-        position: relative;
-        border-radius: 10px;
-        padding: 26px 16px 8px;
-        width: 249px;
-        height: 56px;
-        background-color: var(--page-bg);
-        color: var(--text-color);
-    }
-    &__form-lable {
-        position: absolute;
-        padding-top: 10px;
-        padding-left: 16px;
-        font-size: 12px;
-        color: rgba(47, 43, 67, 0.4);
-    }
-    &__copy {
-        font-weight: 600;
-        font-size: 12px;
-        color: rgba(255, 255, 255, 0.5);
-    }
+    
 }
