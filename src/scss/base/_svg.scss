@@ -12,7 +12,14 @@
 // }
 
 .svg-icons--green {
-    width: 24px;
-    height: 24px;
     color: var(--green);
 }
+
+.svg-icons--white {
+    color: var(--page-bg);
+}
+
+// шаблон вызова иконки в html
+// <svg class="svg-icons">
+//     <use href="./img/svg-sprite/sprite.svg#phone"></use>
+// </svg>

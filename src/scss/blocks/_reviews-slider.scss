@@ -1,0 +1,55 @@
+.swiper-slider {
+    display: flex;
+}
+.reviews-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(47, 43, 67, 0.15);
+    border-radius: 20px;
+    padding: 30px;
+    width: 367px;
+    flex-grow: 1;
+
+    &__header {
+        display: flex;
+        gap: 15px;
+    }
+    &__user {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: #115b82;
+
+        margin-bottom: 24px;
+    }
+    &__user-desc h4 {
+        font-weight: 600;
+        font-size: 18px;
+    }
+    &__user-desc p {
+        color: rgba(47, 43, 67, 0.5);
+    }
+    &__text {
+        line-height: 1.6;
+        margin-bottom: 24px;
+    }
+    &__question {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        font-weight: 600;
+        line-height: 1.5;
+        color: var(--green);
+
+        margin-top: auto;
+    }
+    &__question span {
+        font-size: 14px;
+        color: rgba(47, 43, 67, 0.5);
+    }
+}
