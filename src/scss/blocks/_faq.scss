@@ -1,0 +1,25 @@
+.faq {
+    margin-bottom: 80px;
+    &__header {
+        margin-bottom: 40px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 40px;
+        column-gap: 20px;
+    }
+    &__block {
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    &__block ul li+li {
+        margin-top: 10px;
+    }
+    &__letter {
+        font-weight: 700;
+        font-size: 24px;
+    }
+}
