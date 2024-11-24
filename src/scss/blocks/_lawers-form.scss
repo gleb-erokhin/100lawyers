@@ -1,0 +1,20 @@
+.lawers-form {
+    border-radius: 20px;
+    padding: 40px;
+    width: 657px;
+    background-color: var(--green);
+    color: var(--text-color-white);
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &__header p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    &__inputs {
+    }
+    &__summary {
+    }
+}
