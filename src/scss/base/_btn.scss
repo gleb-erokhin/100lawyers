@@ -17,17 +17,12 @@ a.btn:hover {
     border: 1px solid var(--green);
 }
 
-// .btn:active,
-// a.btn:active {
-//     border: 1px solid #1a77a3;
-// }
-
 .btn--header,
 a.btn--header {
     font-weight: 600;
     color: #fff;
     border: 1px solid transparent;
-    padding: 15px 20px;
+    padding: 13px 20px;
     background-color: var(--green);
 }
 .btn--header:hover,

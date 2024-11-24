@@ -5,8 +5,12 @@
     }
 }
 
-.reviews-slider__wrapper {
-    display: flex;
+.swiper-wrapper {
+    align-items: stretch;
+}
+
+.reviews-slider-wrapper {
+    position: relative;
 }
 
 .slider-button-next,
@@ -18,6 +22,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-150%, -50%);
+}
+
+.slider-button-prev {
+    left: unset;
+    right: 0;
+    transform: translate(150%, -50%);
+
 }
 
 .slider-button-next:hover,

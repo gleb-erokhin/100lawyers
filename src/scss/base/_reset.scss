@@ -56,7 +56,12 @@ input, textarea, button, select {
     font-size: inherit;
     color: inherit;
     background-color: transparent;
+	outline: none;
+	&:focus {
+		outline: none;
+	}
 }
+
 
 input::-ms-clear {
 	display: none;

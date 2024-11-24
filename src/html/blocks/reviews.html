@@ -5,22 +5,25 @@
             <div class="reviews__header">
                 <h2 class="title-2">Отзывы наших клиентов</h2>
             </div>
-            <div class="reviews-slider ">
-                <div class="reviews-slider__wrapper">
-                    @@include('reviews-slider.html')
+            <div class="reviews-slider-wrapper">
+                <div class="reviews-slider swiper">
+                    <div class="swiper-wrapper">
+                        <!-- блоки карточек тут -->
+                        @@include('reviews-slider.html')
+                    </div>
                 </div>
-                <div class="slider-button-next none">
+                <div class="slider-button-next">
                     <!-- иконку стрелки сюда  -->
                     <svg class="svg-icons">
                         <use href="./../../img/svg-sprite/sprite.svg#arrowL"></use>
                     </svg>
                 </div>
-                <div class="slider-button-prev none">
+                <div class="slider-button-prev">
                     <!-- иконку стрелки сюда  -->
                     <svg class="svg-icons">
                         <use href="./../../img/svg-sprite/sprite.svg#arrowR"></use>
                     </svg>
-
+    
                 </div>
             </div>
         </div>
