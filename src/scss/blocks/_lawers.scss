@@ -7,11 +7,9 @@
         display: flex;
         justify-content: space-between;
     }
-    &__left {
+    &__list {
         display: flex;
         flex-direction: column;
         gap: 15px;
-    }
-    &__right {
     }
 }

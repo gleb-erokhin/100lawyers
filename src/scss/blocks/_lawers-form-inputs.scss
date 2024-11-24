@@ -11,10 +11,11 @@
 .inputs__textarea::placeholder {
     color: rgba(47, 43, 67, 0.5);
 }
-.inputs__wrapper-phone {
-    position: relative;
-}
+.inputs__wrapper-phone,
 .inputs__wrapper-name {
+    // стави ее при уменьшении экрана
+    // width: 100%;
+    min-width: 205px;
     position: relative;
 }
 
@@ -28,9 +29,9 @@
 }
 .inputs__input-phone,
 .inputs__input-name {
+    width: 100%;
     border-radius: 10px;
-    padding: 26px 16px 8px;
-    width: 205px;
+    padding: 26px 11px 8px;
     background-color: #fff;
     color: #140a32;
 }
@@ -43,6 +44,8 @@
     color: rgba(47, 43, 67, 0.4);
 }
 .inputs__btn {
+    // стави ее при уменьшении экрана
+    // width: 100%;
     border-radius: 10px;
     padding: 16px 24px 18px 24px;
     background-color: #140a32;
