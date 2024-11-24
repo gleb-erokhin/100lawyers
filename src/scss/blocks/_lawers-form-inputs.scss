@@ -51,4 +51,12 @@
     background-color: #140a32;
 
     font-weight: 600;
+    transition:
+        background-color 0.2s ease-in,
+        color 0.2s ease-in;
+}
+
+.inputs__btn:hover {
+    background-color: #fff;
+    color: #000;
 }

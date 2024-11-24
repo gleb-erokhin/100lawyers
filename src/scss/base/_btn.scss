@@ -31,7 +31,9 @@ a.btn--header {
     background-color: var(--green);
 }
 .btn--header:hover,
-a.btn--header:hover {
+a.btn--header:hover,
+.btn--promo:hover,
+a.btn--promo:hover {
     border: 1px solid transparent;
     background-color: #81d2bc;
 }
@@ -40,7 +42,7 @@ a.btn--header:hover {
 a.btn--promo {
     border: 1px solid transparent;
     border-radius: 10px;
-    padding: 16px 36px 18px 36px;
+    padding: 16px 36px 18px;
     background-color: var(--green);
 
     font-weight: 600;
@@ -64,11 +66,11 @@ a.btn--call:hover {
 
 // используется в блоке SEO и форма связи - Юристы портала
 .btn-accordion {
-        width: 100%;
-        border-radius: 10px;
-        padding: 16px 36px 18px 36px;
-        background-color: #e0ece9;
+    width: 100%;
+    border-radius: 10px;
+    padding: 16px 36px 18px 36px;
+    background-color: #e0ece9;
 
-        font-weight: 600;
-        color: var(--green);
-    }
+    font-weight: 600;
+    color: var(--green);
+}
