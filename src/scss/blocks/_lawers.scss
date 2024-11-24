@@ -1,0 +1,17 @@
+.lawers {
+    margin-bottom: 80px;
+    &__header {
+        margin-bottom: 30px;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    &__right {
+    }
+}

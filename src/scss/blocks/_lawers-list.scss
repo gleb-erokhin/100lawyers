@@ -1,0 +1,20 @@
+.lawers-list {
+    border: 1px solid rgba(47, 43, 67, 0.15);
+    border-radius: 20px;
+    padding: 20px;
+    width: 463px;
+    
+    &__link {
+        display: flex;
+        gap: 20px;
+    }
+    &__desc h4 {
+        margin-bottom: 5px;
+    }
+    &__desc p {
+        margin-bottom: 10px;
+    }
+    &__desc span {
+        color: rgba(47, 43, 67, 0.5);
+    }
+}
