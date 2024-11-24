@@ -1,0 +1,39 @@
+.inputs__textarea {
+    border-radius: 10px;
+    padding: 12px 16px 8px 16px;
+    width: 577px;
+    height: 213px;
+    background-color: #fff;
+}
+
+.inputs__textarea::placeholder {
+    color: rgba(47, 43, 67, 0.5);
+}
+.inputs__wrapper {
+    margin-top: 20px;
+    display: inline-flex;
+    gap: 15px;
+}
+.inputs__input-phone,
+.inputs__input-name {
+    position: relative;
+    border-radius: 10px;
+    padding: 26px 16px 8px;
+    width: 205px;
+    background-color: #fff;
+    color: #140a32;
+}
+.inputs__lable-phone {
+    position: absolute;
+}
+.inputs__lable-name {
+    position: absolute;
+
+}
+.inputs__btn {
+    border-radius: 10px;
+    padding: 16px 24px 18px 24px;
+    background-color: #140a32;
+
+    font-weight: 600;
+}
