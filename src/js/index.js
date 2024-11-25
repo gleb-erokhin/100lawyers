@@ -8,3 +8,13 @@ navBtn.onclick = function () {
     menuIcon.classList.toggle('nav-icon--active');
     document.body.classList.toggle('no-scroll');
 };
+
+// swiper slider
+var swiper = new Swiper(".reviews-slider", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".slider-button-next",
+        prevEl: ".slider-button-prev",
+    },
+});
