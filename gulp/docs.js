@@ -174,10 +174,9 @@ gulp.task('html:docs', function () {
         .pipe(fileInclude({ fileIncludeConfig }))
         .pipe(
             replace(
-                /(['"]?)(\.\.\/)+(img|images|fonts|css|scss|sass|js|files|audio|video)(\/[^\/'"]+(\/))?([^'"]*)\1/gi,
-                '$1$2$3$4$6$1'
-            )
-        )
+                /(?<=src=|href=|srcset=)(['"])(\.(\.)?\/)*(img|images|fonts|css|scss|sass|js|files|audio|video)(\/[^\/'"]+(\/))?([^'"]*)\1/gi,
+                '$1./$4$5$7$1'
+            ))
         .pipe(webphtml())
         .pipe(htmlclean())
         .pipe(gulp.dest('./docs/'))
