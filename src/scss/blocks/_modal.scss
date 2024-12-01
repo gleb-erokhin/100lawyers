@@ -23,10 +23,10 @@
 
         position: relative;
         border-radius: 20px;
-        width: 896px;
+        max-width: 896px;
+        width: 100%;
         box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.1);
         background-color: var(--page-bg);
-        padding: 55px 30px;
         overflow: hidden;
     }
     &__body::after {
@@ -38,13 +38,13 @@
         left: -316px;
         background-color: var(--green);
         border-radius: 50%;
-        z-index: 9;
+        z-index: 1;
     }
     &__img {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        z-index: 99;
+        display: flex;
+        align-items: flex-end;
+        flex-shrink: 0;
+        z-index: 2;
     }
     &__close {
         position: absolute;
@@ -55,7 +55,7 @@
         display: flex;
         flex-direction: column;
 
-        width: 577px;
+        padding: 55px 30px;
     }
     &__header {
         margin-bottom: 20px;
