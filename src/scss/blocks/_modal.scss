@@ -11,7 +11,6 @@
     opacity: 0;
     pointer-events: none;
     transition: all 0.2s ease-in;
-    z-index: 9;
 
     &--open {
         opacity: 1;
@@ -26,8 +25,14 @@
         max-width: 896px;
         width: 100%;
         box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.1);
-        background-color: var(--page-bg);
+        background-color: #f6d1d1;
+        // background-color: var(--page-bg);
         overflow: hidden;
+
+        @include tablet {
+            max-width: 390px;
+            flex-direction: column-reverse;
+        }
     }
     &__body::after {
         position: absolute;
@@ -39,12 +44,24 @@
         background-color: var(--green);
         border-radius: 50%;
         z-index: 1;
+
+        @include tablet {
+            width: 385px;
+            height: 385px;
+            top: 395px;
+            left: -50%;
+        }
     }
     &__img {
         display: flex;
         align-items: flex-end;
         flex-shrink: 0;
         z-index: 2;
+    }
+    &__img img {
+        @include tablet {
+            margin-top: -95px;
+        }
     }
     &__close {
         position: absolute;
@@ -56,9 +73,16 @@
         flex-direction: column;
 
         padding: 55px 30px;
+
+        @include tablet {
+            padding: 20px;
+        }
     }
     &__header {
         margin-bottom: 20px;
+        @include tablet {
+            margin-bottom: 15px;
+        }
     }
     &__status {
         display: flex;
@@ -66,15 +90,35 @@
         align-items: center;
         justify-content: flex-end;
         gap: 20px;
+
+        @include tablet {
+            order: 3;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 10px;
+            margin-top: 30px;
+        }
     }
     &__status p {
         font-size: 16px;
         margin-bottom: unset;
     }
+    &__status .baner-online__item img {
+        @include tablet {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    &__status .baner-online__item {
+        margin-left: -13px;
+    }
     &__inputs {
         margin-top: 30px;
         margin-bottom: unset;
         color: var(--text-color-white);
+        @include tablet {
+            margin-top: unset;
+        }
     }
     &__inputs p {
         font-weight: 600;
