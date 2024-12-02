@@ -25,8 +25,7 @@
         max-width: 896px;
         width: 100%;
         box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.1);
-        background-color: #f6d1d1;
-        // background-color: var(--page-bg);
+        background-color: var(--page-bg);
         overflow: hidden;
 
         @include tablet {
@@ -108,9 +107,6 @@
             width: 40px;
             height: 40px;
         }
-    }
-    &__status .baner-online__item {
-        margin-left: -13px;
     }
     &__inputs {
         margin-top: 30px;
