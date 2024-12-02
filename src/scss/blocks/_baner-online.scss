@@ -57,5 +57,8 @@
     &__item {
         position: relative;
         margin-left: -30px;
+        @include tablet {
+            margin-left: -13px;
+        }
     }
 }

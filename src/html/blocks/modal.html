@@ -1,62 +1,65 @@
-<section class="modal modal--open">
-    <div class="container">
-        <div class="modal__body">
-            <button class="modal__close">
-                <img src="./../../img/modal/close_thick.svg" alt="">
-            </button>
-            <div class="modal__img">
-                <img src="./../../img/modal/woman-modal.png" alt="">
-            </div>
-            <div class="modal__desc">
-                <div class="modal__header">
-                    <h2 class="title-2">Бесплатная юридическая консультация по телефону</h2>
-                </div>
-                <div class="baner-online__status modal__status">
-                    <p>
-                        64 юриста сейчас онлайн
-                    </p>
-                    <ul class="baner-online__list">
-                        <li class="baner-online__item">
-                            <img src="./../../img/baner-online/1.png" alt="">
-                        </li>
-                        <li class="baner-online__item">
-                            <img src="./../../img/baner-online/2.png" alt="">
-                        </li>
-                        <li class="baner-online__item">
-                            <img src="./../../img/baner-online/6.png" alt="">
-                        </li>
-                        <li class="baner-online__item">
-                            <img src="./../../img/baner-online/4.png" alt="">
-                        </li>
-                        <li class="baner-online__item">
-                            <img src="./../../img/baner-online/5.png" alt="">
-                        </li>
-                        <li class="baner-online__item">
-                            <img src="./../../img/baner-online/3.png" alt="">
-                        </li>
-                        <li class="baner-online__item">
-                            <img src="./../../img/baner-online/7.png" alt="">
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="inputs__wrapper modal__inputs">
-                    <div class="inputs__wrapper-phone ">
-                        <input type="text" class="inputs__input-phone modal--input" id="phone">
-                        <label for="phone" class="inputs__lable-phone">Номер телефона</label>
-                    </div>
-
-                    <div class="inputs__wrapper-name">
-                        <input type="text" class="inputs__input-name modal--input" id="name">
-                        <label for="name" class="inputs__lable-name">Ваше имя</label>
-                    </div>
-
-                    <button class="inputs__btn modal--btn-send">Отправить</button>
-                    <p class="back-call__copy">Отправляя вопрос, вы соглашаетесь с условиями <a href="#!"
-                            class="back-call__copy-link">Пользовательского соглашения</a></p>
-                </div>
-
-            </div>
+<section class="modal">
+    <div class="modal__body">
+        <button class="modal__close">
+            <img src="./../../img/modal/close_thick.svg" alt="">
+        </button>
+        <div class="modal__img">
+            <picture>
+                <source srcset="./../../img/modal/woman-modal-w991.png" width="213" height="182" media="(max-width: 991px)">
+                <img src="./../../img/modal/woman-modal.png" width="259" height="397" alt="">
+                
+            </picture>
         </div>
+        <div class="modal__desc">
+            <div class="modal__header">
+                <h2 class="title-2">Бесплатная юридическая консультация по телефону</h2>
+            </div>
+            <div class="baner-online__status modal__status">
+                <p>
+                    64 юриста сейчас онлайн
+                </p>
+                <ul class="baner-online__list">
+                    <li class="baner-online__item modal__status-item">
+                        <img src="./../../img/baner-online/1.png" alt="">
+                    </li>
+                    <li class="baner-online__item">
+                        <img src="./../../img/baner-online/2.png" alt="">
+                    </li>
+                    <li class="baner-online__item">
+                        <img src="./../../img/baner-online/6.png" alt="">
+                    </li>
+                    <li class="baner-online__item">
+                        <img src="./../../img/baner-online/4.png" alt="">
+                    </li>
+                    <li class="baner-online__item">
+                        <img src="./../../img/baner-online/5.png" alt="">
+                    </li>
+                    <li class="baner-online__item">
+                        <img src="./../../img/baner-online/3.png" alt="">
+                    </li>
+                    <li class="baner-online__item">
+                        <img src="./../../img/baner-online/7.png" alt="">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="inputs__wrapper modal__inputs">
+                <div class="inputs__wrapper-phone ">
+                    <input type="text" class="inputs__input-phone modal--input" id="phone">
+                    <label for="phone" class="inputs__lable-phone">Номер телефона</label>
+                </div>
+
+                <div class="inputs__wrapper-name">
+                    <input type="text" class="inputs__input-name modal--input" id="name">
+                    <label for="name" class="inputs__lable-name">Ваше имя</label>
+                </div>
+
+                <button class="inputs__btn modal--btn-send">Отправить</button>
+                <p class="back-call__copy">Отправляя вопрос, вы соглашаетесь с условиями <a href="#!"
+                        class="back-call__copy-link">Пользовательского соглашения</a></p>
+            </div>
+
+        </div>
+    </div>
 
 </section>

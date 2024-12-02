@@ -8,6 +8,10 @@
 	font-weight: 700;
 	font-size: 32px;
 	letter-spacing: -0.03em;
+
+	@include tablet {
+		font-size: 22px;
+	}
 }
 
 .title-3 {

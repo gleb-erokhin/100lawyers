@@ -13,10 +13,12 @@
 }
 .inputs__wrapper-phone,
 .inputs__wrapper-name {
-    // стави ее при уменьшении экрана
-    // width: 100%;
     min-width: 205px;
     position: relative;
+    @include tablet {
+        // стави ее при уменьшении экрана
+        width: 100%;
+    }
 }
 
 .inputs__wrapper {
@@ -34,6 +36,10 @@
     padding: 26px 10px 8px;
     background-color: #fff;
     color: #140a32;
+    @include tablet {
+        padding: 22px 10px 7px;
+        font-size: 14px;
+    }
 }
 .inputs__lable-phone,
 .inputs__lable-name {
@@ -42,10 +48,11 @@
     left: 16px;
     font-size: 12px;
     color: rgba(47, 43, 67, 0.8);
+    @include tablet {
+        top: 5px;
+    }
 }
 .inputs__btn {
-    // стави ее при уменьшении экрана
-    // width: 100%;
     border-radius: 10px;
     padding: 16px 24px 18px 24px;
     background-color: #140a32;
@@ -54,6 +61,11 @@
     transition:
         background-color 0.2s ease-in,
         color 0.2s ease-in;
+    @include tablet {
+        // стави ее при уменьшении экрана
+        width: 100%;
+        padding: 15px 24px 16px 24px;
+    }
 }
 
 .inputs__btn:hover {
