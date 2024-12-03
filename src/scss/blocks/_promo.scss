@@ -4,16 +4,21 @@
         display: flex;
         justify-content: space-between;
         gap: 30px;
+
         @include tablet {
+            flex-direction: column;
             justify-content: center;
-            flex-wrap: wrap;
             align-items: center;
         }
     }
     &__info {
-        flex-grow: 1;
+        flex: 1;
         max-width: 657px;
         padding-top: 50px;
+
+        @include tablet {
+            padding-top: 15px;
+        }
     }
     &__header {
         padding-bottom: 15px;
@@ -22,12 +27,22 @@
         padding-bottom: 30px;
         font-size: 16px;
         line-height: 1.6;
+
+        @include mobile {
+            padding-bottom: 15px;
+        }
     }
     &__action {
         padding-bottom: 40px;
         display: flex;
         align-items: center;
         gap: 30px;
+
+        @include mobile {
+            flex-direction: column;
+            gap: 15px;
+            padding-bottom: 20px;
+        }
     }
     &__list {
         max-width: 628px;
@@ -35,52 +50,61 @@
         justify-content: space-between;
         align-items: center;
         gap: 30px;
+
+        @include mobile {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
     }
     &__list-item {
         display: flex;
         gap: 10px;
     }
     &__img {
-        position: relative;
-        flex-shrink: 0;
-        width: 377px;
-        height: 377px;
-        border-radius: 50%;
-        background-color: var(--green);
-        overflow: hidden;
-        bottom: -24px;
+        flex: 1;
     }
+    // &__img {
+    //     position: relative;
+    //     flex-shrink: 0;
+    //     width: 377px;
+    //     height: 377px;
+    //     border-radius: 50%;
+    //     background-color: var(--green);
+    //     overflow: hidden;
+    //     bottom: -24px;
+    // }
 
-    &__img::before {
-        position: absolute;
-        content: "";
-        width: 308px;
-        height: 402px;
-        top: -13px;
-        left: 50%;
-        transform: translate(-50%, 0);
+    // &__img::before {
+    //     position: absolute;
+    //     content: "";
+    //     width: 308px;
+    //     height: 402px;
+    //     top: -13px;
+    //     left: 50%;
+    //     transform: translate(-50%, 0);
 
-        background-image: url("./../../img/hot-line/main-photo.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+    //     background-image: url("./../../img/hot-line/main-photo.png");
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    // }
 
-    &__overlay {
-        position: relative;
-    }
-    &__overlay::after {
-        position: absolute;
-        content: "";
-        width: 308px;
-        height: 402px;
-        top: -65px;
-        left: 50%;
-        transform: translate(-50%, 0);
+    // &__overlay {
+    //     position: relative;
+    // }
+    // &__overlay::after {
+    //     position: absolute;
+    //     content: "";
+    //     width: 308px;
+    //     height: 402px;
+    //     top: -65px;
+    //     left: 50%;
+    //     transform: translate(-50%, 0);
 
-        background-image: url("./../../img/hot-line/m2.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+    //     background-image: url("./../../img/hot-line/m2.png");
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    // }
 }

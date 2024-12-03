@@ -1,4 +1,7 @@
 .breadcrumbs {
+    @include tablet {
+        margin-top: 10px;
+    }
     &__list {
         display: flex;
         gap: 20px;
