@@ -4,6 +4,11 @@
         display: flex;
         justify-content: space-between;
         gap: 30px;
+        @include tablet {
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
     }
     &__info {
         flex-grow: 1;
@@ -25,7 +30,7 @@
         gap: 30px;
     }
     &__list {
-        width: 628px;
+        max-width: 628px;
         display: flex;
         justify-content: space-between;
         align-items: center;
