@@ -1,0 +1,25 @@
+.header-mob {
+    display: none;
+	padding: 15px 0;
+    border-bottom: 1px solid rgba(47, 43, 67, 0.15);
+
+    @include tablet {
+        display: block;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    &__logo {
+        flex-shrink: 0;
+    }
+    &__profile {
+        display: flex;
+        gap: 5px;
+        flex-shrink: 0;
+    }
+}
+
