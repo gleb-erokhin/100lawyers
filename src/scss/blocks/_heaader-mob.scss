@@ -1,0 +1,15 @@
+.header-mob {
+	padding: 40px 0;
+
+    @include desktop {
+        display: none;
+    }
+    
+    @include tablet {
+        display: block;
+    }
+
+    &__row {
+    }
+}
+

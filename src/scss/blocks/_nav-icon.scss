@@ -36,7 +36,7 @@
 .nav-icon::after {
 	content: '';
 	display: block;
-
+    z-index: 3;
 	position: absolute;
 	left: 0;
 
@@ -81,7 +81,7 @@
 /* Layout */
 
 .mobile-nav-btn {
-	z-index: 999;
+	z-index: 1;
 	// display: none;
 }
 
