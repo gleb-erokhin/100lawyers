@@ -12,6 +12,13 @@ a.btn {
     outline-color: var(--green);
 }
 
+.btn p,
+a.btn p {
+    @include desktop {
+        display: none;
+    }
+}
+
 .btn:hover,
 a.btn:hover {
     border: 1px solid var(--green);
@@ -24,6 +31,9 @@ a.btn--header {
     border: 1px solid transparent;
     padding: 13px 20px;
     background-color: var(--green);
+    @include desktop {
+        font-size: 14px;
+    }
 }
 .btn--header:hover,
 a.btn--header:hover,

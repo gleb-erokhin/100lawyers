@@ -13,12 +13,28 @@
 		"description": "Log output to console"
 	},
 
+	/* Media desktop */
+	"mediaDesktop": {
+		"scope": "css,scss",
+		"prefix": "desktop",
+		"body": ["@include desktop {", "    ${1}", "}"],
+		"description": "desktop"
+	},
+
 	/* Media Tablet */
 	"mediaTablet": {
 		"scope": "css,scss",
 		"prefix": "tablet",
 		"body": ["@include tablet {", "    ${1}", "}"],
 		"description": "tablet"
+	},
+
+	/* Media Small */
+	"mediaSmall": {
+		"scope": "css,scss",
+		"prefix": "small",
+		"body": ["@include small {", "    ${1}", "}"],
+		"description": "small"
 	},
 
 	/* Media Mobile */
