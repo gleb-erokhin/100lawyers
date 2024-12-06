@@ -1,5 +1,19 @@
 .container {
+	width: 100%;
 	padding: 0 var(--container-padding);
 	max-width: var(--container-width);
 	margin: 0 auto;
+
+	@include desktop {
+		max-width: 960px;
+	}
+	@include tablet {
+		max-width: 740px;
+	}
+	@include small {
+		max-width: 540px;
+	}
+	@include mobile {
+		max-width: 100%;
+	}
 }
