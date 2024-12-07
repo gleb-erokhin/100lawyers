@@ -1,9 +1,13 @@
 .choose {
     &__info {
         display: flex;
+        @include tablet {
+            flex-direction: column;
+        }
     }
     &__info-img {
         flex: 1;
+        margin-top: auto;
     }
     &__info-desc {
         padding-top: 29px;
@@ -33,12 +37,20 @@
     &__baner-call {
         display: flex;
         justify-content: space-between;
+        flex-direction: unset;
         align-items: center;
 
         color: var(--text-color-white);
         border-radius: 20px;
         background-color: var(--green);
         padding: 31px 57px 34px 60px;
+        @include tablet {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        @include tablet {
+            padding: 20px;
+        }
     }
     &__hot-line p {
         font-weight: 600;
@@ -49,6 +61,11 @@
         font-weight: 700;
         font-size: 42px;
         letter-spacing: -0.03em;
+        @include small {
+            font-size: 36px;
+        }
+        @include mobile {
+            font-size: 30px;
+        }
     }
-    
 }
