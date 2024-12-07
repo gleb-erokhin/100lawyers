@@ -63,5 +63,16 @@ pre.code {
 
 // стиль для подчеркивания пользовательского соглашения, чтобы один раз на все страницы где используется back-call
 .main .back-call__copy-link {
-    text-decoration: underline;
+	text-decoration: underline;
+}
+
+// отступы между блоками, медиа запросы
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+	
+	@include tablet {
+		margin-bottom: 40px;
+	}
 }

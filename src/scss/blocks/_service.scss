@@ -1,5 +1,4 @@
 .service {
-    margin-bottom: 80px;
     &__header {
         margin-bottom: 30px;
     }
@@ -12,15 +11,20 @@
     &__list-item {
         display: flex;
         align-items: center;
+        flex-direction: unset;
+        gap: 20px;
 
         border: 1px solid rgba(47, 43, 67, 0.15);
         border-radius: 20px;
         padding: 30px;
         width: 560px;
+
+        @include mobile {
+            flex-direction: column;
+            width: 100%;
+        }
     }
     &__list-item p {
-        width: 390px;
-        padding: 0 20px;
         font-size: 16px;
         line-height: 1.5;
     }

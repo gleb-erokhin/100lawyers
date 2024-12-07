@@ -1,21 +1,13 @@
 .baner-online {
     color: var(--text-color-white);
     font-weight: 600;
-    margin-bottom: 80px;
 
     &__row {
         position: relative;
         display: flex;
         align-items: center;
-        // justify-content: space-between;
-        // flex-direction: column;
-        // gap: 56px;
 
-        // min-height: 200px;
         border-radius: 20px;
-        // padding: 43px 117px 50px 313px;
-        // padding: 43px 117px;
-
         background-color: var(--green);
         overflow: hidden;
 
@@ -34,16 +26,6 @@
         background-color: rgba(20, 10, 50, 0.2);
         z-index: 0;
     }
-    // &__row::after {
-    //     position: absolute;
-    //     content: "";
-    //     width: 298px;
-    //     height: 200px;
-    //     bottom: 0;
-    //     left: 36px;
-
-    //     background-image: url('./../../img/baner-online/woman.png');
-    // }
 
     &__img {
         position: relative;
