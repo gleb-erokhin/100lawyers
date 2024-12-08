@@ -8,6 +8,9 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    @include mobile {
+        padding: 20px;
+    }
 
     &__header p {
         font-size: 18px;

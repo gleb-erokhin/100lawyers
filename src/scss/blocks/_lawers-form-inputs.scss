@@ -28,6 +28,10 @@
     gap: 15px;
 
     margin-bottom: 15px;
+    @include desktop {
+        flex-direction: column;
+        width: 100%;
+    }
 }
 .inputs__input-phone,
 .inputs__input-name {
