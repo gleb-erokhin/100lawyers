@@ -1,10 +1,12 @@
 // Mobile nav button
 const navBtn = document.querySelector('.mobile-nav-btn');
 const nav = document.querySelector('.mobile-nav');
+const overlay = document.querySelector('.mobile-nav-overlay');
 const menuIcon = document.querySelector('.nav-icon');
 
 navBtn.onclick = function () {
     nav.classList.toggle('mobile-nav--open');
+    overlay.classList.toggle('mobile-nav-overlay--show');
     menuIcon.classList.toggle('nav-icon--active');
     document.body.classList.toggle('no-scroll');
 };
