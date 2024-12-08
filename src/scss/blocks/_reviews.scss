@@ -27,13 +27,19 @@
     left: 0;
     top: 50%;
     transform: translate(-150%, -50%);
+    @include desktop {
+        top: 105%;
+        transform: unset;
+    }
 }
 
 .slider-button-prev {
     left: unset;
     right: 0;
     transform: translate(150%, -50%);
-
+    @include desktop {
+        transform: unset;
+    }
 }
 
 .slider-button-next:hover,
