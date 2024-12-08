@@ -38,6 +38,9 @@ pre.code {
 
 	font-weight: 700;
 	font-size: 20px;
+	@include mobile {
+		align-items: center;
+	}
 
 	& span {
 		font-weight: 400;
@@ -71,8 +74,10 @@ pre.code {
 	display: flex;
 	flex-direction: column;
 	gap: 80px;
-	
 	@include tablet {
-		margin-bottom: 40px;
+		gap: 60px;
+	}
+	@include mobile {
+		gap: 40px;
 	}
 }

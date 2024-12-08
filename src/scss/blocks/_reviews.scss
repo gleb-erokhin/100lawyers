@@ -28,7 +28,7 @@
     top: 50%;
     transform: translate(-150%, -50%);
     @include desktop {
-        top: 105%;
+        top: 103%;
         transform: unset;
     }
 }
