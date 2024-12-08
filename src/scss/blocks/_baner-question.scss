@@ -2,26 +2,59 @@
     &__row {
         position: relative;
         display: flex;
-        gap: 41px;
+        align-items: center;
+        flex-direction: unset;
 
         border-radius: 20px;
         background-color: rgba(47, 43, 67, 0.04);
-        padding: 51px 53px 37px;
+        padding-left: 53px;
+        @include desktop {
+            padding: 48px 0 48px 53px;
+        }
+        @include tablet {
+            flex-direction: column;
+            align-items: start;
+        }
+        @include small {
+            padding: 20px;
+        }
     }
-    &__herader {
+    &__header {
+        @include tablet {
+            padding-bottom: 20px;
+        }
+    }
+    &__header h2 {
         width: 295px;
-        display: flex;
     }
-    &__row::after {
-        position: absolute;
-        content: "";
-        bottom: 0;
-        right: 0;
+    &__img {
+        position: relative;
         width: 292px;
-        height: 199px;
-        background-image: url("./../../img/baner-online/iphone13.png");
-        background-size: 292px 199px;
+        display: block;
+        @include desktop {
+            display: none;
+        }
     }
+    &__wrapper {
+        width: calc(100% - 295px - 292px);
+        padding-left: 36px;
+        @include desktop {
+            width: 100%;
+        }
+        @include tablet {
+            padding-left: 0;
+        }
+    }
+    // &__row::after {
+    //     position: absolute;
+    //     content: "";
+    //     bottom: 0;
+    //     right: 0;
+    //     width: 292px;
+    //     height: 199px;
+    //     background-image: url("./../../img/baner-online/iphone13.png");
+    //     background-size: 292px 199px;
+    // }
 }
 
 .baner-question .back-call__copy {
@@ -33,6 +66,9 @@
 .baner-question .back-call__form-input {
     border: 1px solid rgba(47, 43, 67, 0.15);
     width: 201px;
+    @include small {
+        width: 100%;
+    }
 }
 
 .baner-question .btn--call {
