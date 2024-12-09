@@ -11,6 +11,28 @@ navBtn.onclick = function () {
     document.body.classList.toggle('no-scroll');
 };
 
+/** Функции */
+// функция закрытия бургер меню через ESC
+function closeBurger() {
+    nav.classList.remove('mobile-nav--open');
+    overlay.classList.remove('mobile-nav-overlay--show');
+    menuIcon.classList.remove('nav-icon--active');
+    document.body.classList.remove('no-scroll');
+}
+
+// закрытие бургер меню через ESC
+function escCloseBtn(event) {
+    if (event.key == 'Escape') {
+        closeBurger();
+    }
+}
+
+/** Закрываем бургер меню по кнопке ESC */
+document.addEventListener('keydown', escCloseBtn);
+
+/** Закрытие модалки по поле затемнению */
+overlay.addEventListener('click', closeBurger);
+
 // swiper slider
 var swiper = new Swiper(".reviews-slider", {
     // slidesPerView: 3,
