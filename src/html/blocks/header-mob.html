@@ -16,14 +16,30 @@
             </div>
 
             <ul class="header-mob__profile">
-                <li>
+                <li data-modal-search="modal-search-btn">
                     <img src="./../../img/svgicons/search.svg" alt="">
                 </li>
                 <li>
                     <img src="./../../img/svgicons/user.svg" alt="">
                 </li>
             </ul>
+
         </div>
     </div>
+
+    <!-- модальный поиск в мобильной версии -->
+    <div class="header-mob__modal-search" data-modal-search="modal-search">
+        <form class="modal-search" action="#!">
+            <div class="modal-search__find-logo">
+                <img src="./../../img/svgicons/search.svg" alt="">
+            </div>
+            <input class="modal-search__input" type="text" placeholder="Я хочу найти">
+            <div class="modal-search__close" data-modal-search="modal-search-close">
+                <img src="./../../img/modal/close_thick.svg" alt="">
+            </div>
+        </form>
+    </div>
+
+    
     <div class="mobile-nav-overlay"></div>
 </header>
