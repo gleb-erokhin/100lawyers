@@ -57,6 +57,7 @@
 	color: var(--text-color);
 }
 
+// работает только в мобильной версии
 .mobile-nav-overlay {
 	position: fixed;
 	top: 63px;
@@ -68,6 +69,7 @@
 	display: none;
 }
 
+// работает только в мобильной версии
 .mobile-nav-overlay--show {
 	display: block;
 }

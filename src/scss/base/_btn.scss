@@ -38,13 +38,17 @@ a.btn--header {
 .btn--header:hover,
 a.btn--header:hover,
 .btn--promo:hover,
-a.btn--promo:hover {
+a.btn--promo:hover,
+.btn--logon:hover,
+a.btn--logon:hover {
     border: 1px solid transparent;
     background-color: #81d2bc;
 }
 
 .btn--promo,
-a.btn--promo {
+a.btn--promo,
+.btn--logon,
+a.btn--logon {
     border: 1px solid transparent;
     border-radius: 10px;
     padding: 16px 36px 18px;
@@ -53,6 +57,11 @@ a.btn--promo {
     font-weight: 600;
     font-size: 16px;
     color: var(--text-color-white);
+}
+
+.btn--logon,
+a.btn--logon {
+    padding: 14px 76px 14px;
 }
 
 .btn--call,
