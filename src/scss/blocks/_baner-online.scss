@@ -70,18 +70,13 @@
     &__status {
         display: block;
         width: 380px;
-        @include desktop {
-            width: 280px;
-        }
 
         @include tablet {
             width: 200px;
             margin-left: auto;
-            margin-right: 80px;
             margin-bottom: 50px;
         }
         @include mobile {
-            margin-right: 25px;
             position: relative;
             z-index: 2
         }
