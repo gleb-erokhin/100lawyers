@@ -47,10 +47,11 @@
     flex-direction: column;
     gap: 10px;
 
-    &__wrapper {
+    &__wrapper input {
         padding: 10px;
         border: 1px solid #e5e5e5;
         border-radius: 10px;
+        width: 100%;
     }
     &__btn {
         margin: 0 auto;

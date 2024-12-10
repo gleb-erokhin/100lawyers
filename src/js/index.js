@@ -56,15 +56,28 @@ modalCloseBtn.addEventListener('click', function () {
 
 // модальное окно для логона
 const modalLogon = document.querySelector('[data-modal-logon="modal-logon"]');
-const modalLogonBtn = document.querySelector('[data-modal-logon="logon"]');
+const modalLogonBtns = document.querySelectorAll('[data-modal-logon="logon"]');
 const modalLogonClose = document.querySelector('[data-modal-logon="close"]');
 const modalBody = document.querySelector('.modal-logon__body');
 
-// активация модального окна по кнопке
-modalLogonBtn.addEventListener('click', function () {
-    modalLogon.classList.add('modal-logon--open');
-    document.body.classList.add('no-scroll');
-})
+/** работаем над открытием модального окна */
+modalLogonBtns.forEach(function (item) {
+    item.addEventListener('click', function () {
+        if (item.closest('.mobile-nav__header')) {
+            nav.classList.remove('mobile-nav--open');
+            overlay.classList.remove('mobile-nav-overlay--show');
+            menuIcon.classList.remove('nav-icon--active');
+
+            modalLogon.classList.add('modal-logon--open');
+            document.body.classList.add('no-scroll');
+        } else {
+            // открываем модалку добавляя к ней класс modal--open
+            modalLogon.classList.add('modal-logon--open');
+            // чтобы страница не крутилась во время открытия модалки
+            document.body.classList.add('no-scroll');
+        }
+    });
+});
 
 // закрытие модального окна
 modalLogonClose.addEventListener('click', closeModalLogon);
