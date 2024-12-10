@@ -12,8 +12,8 @@ a.btn {
     outline-color: var(--green);
 }
 
-.btn p,
-a.btn p {
+.btn span,
+a.btn span {
     @include desktop {
         display: none;
     }
