@@ -37,7 +37,13 @@
                 </div>
                 <div class="back-call">
                     <p>Заказать обратный звонок</p>
-                    @@include('back-call.html')
+                    <form class="back-call__form" action="#">
+                        <input class="back-call__form-input" id="form-phone" type="text">
+                        <label class="back-call__form-lable" for="form-phone">Номер телефона</label>
+                        <button class="btn btn--call">Заказать звонок</button>
+                    </form>
+                    <p class="back-call__copy">Отправляя вопрос, вы соглашаетесь с условиями <a href="#!"
+                            class="back-call__copy-link">Пользовательского соглашения</a></p>
                 </div>
             </div>
         </div>
